@@ -1,0 +1,72 @@
+/* Base button styling */
+.button {
+  transition:
+    0.3s ease,
+    transform 0.2s ease;
+  @apply py-[10px] px-5 text-base rounded border-none cursor-pointer text-center;
+}
+
+/*Button Variants */
+
+/* Primary button */
+.primary {
+  @apply bg-[#007bff] text-white;
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+/* secondary button */
+.secondary {
+  @apply bg-[#6c757d] text-white;
+}
+
+.secondary:hover {
+  @apply bg-[#5a6268];
+}
+
+/* success button */
+button.success {
+  @apply bg-[#28a745] text-white;
+}
+
+button.success:hover {
+  @apply bg-[#218838];
+}
+
+/* Danger button */
+.danger {
+  @apply bg-[#dc3545] text-white;
+}
+.danger:hover {
+  @apply bg-[#c82333];
+}
+
+/* Outline button */
+.outline {
+  @apply bg-transparent text-[#007bff] border-2 border-solid border-[#007bff];
+}
+
+.outline:hover {
+  @apply bg-[#007bff] text-white;
+}
+
+/* Rounded button */
+.rounded {
+  @apply border-[50px];
+}
+
+/* Size variations */
+.small {
+  @apply py-[5px] px-[10px] text-sm;
+}
+
+.medium {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.large {
+  @apply py-[15px] px-[30px] text-lg;
+}

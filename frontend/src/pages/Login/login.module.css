@@ -1,0 +1,7 @@
+.logoContainer {
+  @apply h-10 w-10 py-5;
+}
+
+.logo {
+  @apply object-contain text-center;
+}
