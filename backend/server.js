@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { config } from "./config/dotenv.js";
+import authRoutes from "./routes/authRoutes.js";
 
 const app = express();
 
@@ -17,12 +18,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Define a route
-app.use("/", (req, res) => {
-  console.log("response");
-});
+app.use("/auth", authRoutes);
 
 // Start the server
-app.listen(process.env.PORT, () => {
+app.listen(config.port, () => {
   mongoose.connect(config.dbUri).then(() => console.log("mongodb connected"));
   console.log(`Server is running at http://localhost:${config.port}`);
 });

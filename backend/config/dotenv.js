@@ -21,6 +21,6 @@ export const config = {
   port: process.env.PORT,
   dbUri: process.env.DB_URI,
   origin: process.env.ORIGIN,
-  //   jwtSecret: process.env.JWT_SECRET,
+  salt: process.env.SALT_ROUND,
   nodeEnv: process.env.NODE_ENV || "development", // Provide a default value
 };
